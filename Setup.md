@@ -19,12 +19,11 @@
 
 3. Download the zip file using the presigned URL provided.
    ```bash
-   wget -o netapp-connected-clients-datacollector.zip "PASTE S3 PreSigned URL here between double quotes"
-   unzip netapp-connected-clients-datacollector.zip
-   cd netapp-connected-clients-datacollector/
+   git clone https://github.com/StorageAutomations/netapp-nfs-cifs-sessions-data-logger.git
+   cd netapp-nfs-cifs-sessions-data-logger/
    ```
    
-4. Unzip the file and update `config_input.json` file in the **input** folder with list of Netapp Storage arrays, *Username*, *Password* and *IP address* to collect data.
+4. Update `config_input.json` file in the **input** folder with list of Netapp Storage arrays, *Username*, *Password* and *IP address* to collect data.
 
 5. Start data collection process using `docker-compose` to launch the container
     ```bash
