@@ -7,7 +7,7 @@ services:
     hostname: netappcollector
     container_name: netappcollector
     read_only: true
-    volumes:
+    volumes: 
       - ./code:/usr/app/code/:ro
       - ./input:/usr/app/input:ro
       - ./output:/usr/app/output:rw
